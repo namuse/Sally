@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sally</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Phetsarath:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet'>
+
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+     <!--header-->
+    <header>
+        <a href="#" class="logo">
+            <img src="images/sally2.jpg" alt="Logo">
+            <h2>UMOJA</h2>
+        </a>
+    </header>
+
+    <!--wrapper for login and sign up-->
+    <body>
+        <div class="wrapper">
+            <div class="form-container sign-up">
+                <form id="signUpForm" action="register.php" method="post">
+                    <h2>sign up</h2>
+                    <div class="form-group">
+                        <input type="text" required>
+                        <i class="fas fa-user"></i>
+                        <label for="">username</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" required>
+                        <i class="fas fa-at"></i>
+                        <label for="">email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" required>
+                        <i class="fas fa-lock"></i>
+                        <label for="">password</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" required>
+                        <i class="fas fa-lock"></i>
+                        <label for="">confirm password</label>
+                    </div>
+                    <button type="submit" class="btn">sign up</button>
+                    <div class="link">
+                        <p>You already have an account?<a href="#" class="signin-link"> log in</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="form-container sign-in">
+                <form id="loginForm" action="login.php" method="post">
+                    <h2>login</h2>
+                    <div class="form-group">
+                        <input type="text" required>
+                        <i class="fas fa-user"></i>
+                        <label for="">username</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" required>
+                        <i class="fas fa-lock"></i>
+                        <label for="">password</label>
+                    </div>
+                    <div class="forgot-pass">
+                        <a href="#">forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn">login</button>
+                    <div class="link">
+                        <p>Don't have an account?<a href="#" class="signup-link"> sign up</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <script src="login.js"></script>
+</body>
+</html>
