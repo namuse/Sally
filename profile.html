@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
-      rel="stylesheet">
-
-      <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="profile.css">
     <title>Sally</title>
 </head>
 <body>
-
     <div class="container">
         <!-- Sidebar Section -->
         <aside>
@@ -26,7 +23,6 @@
                     </span>
                 </div>
             </div>
-
             <div class="sidebar">
                 <a href="dashboard.html">
                     <span class="material-icons-sharp">
@@ -43,7 +39,7 @@
                 <a href="comm.html">
                     <span class="material-icons-sharp">
                         chat
-                        </span>
+                    </span>
                     <h3>Chat</h3>
                 </a>
                 <a href="#">
@@ -64,46 +60,29 @@
 
         <!-- Main Content -->
         <main>
-            <h1>Dashboard</h1>
-            <!-- Analyses -->
-            <div class="analyse" id="analyse">
-                
-                <div class="safety-status">
-                    <div class="status">
-                        <div class="info">
-                            <h2>Safety Status</h2>
-                            <p id="safetyStatus">Status: <span id="status">Safe</span></p>
-                            <br>
-                            <button id="updateStatusBtn">Update Status</button>
-                        </div>
-                        
-                        
-                    </div>
-                </div>
-
-                <div class="check-in">
-                    <div class="status">
-                        <div class="info">
-                            <h2>Check-In</h2>
-                            <br>
-                            <button id="checkInBtn">Check In</button>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="check-in-code">
-                    <div class="status">
-                        <div class="info">
-                            <h2>Enter Your Monthly Check-In Code</h2>
-                            <input type="text" id="checkInCode" placeholder="Enter your check-in code...">
-                            <button id="submitCodeBtn">Submit Code</button>
-                            <br>
-                            <p id="message" class="message"></p>
-                        </div>
-                    </div>
-                </div>
+            <h1>Profile</h1>
+            <div class="profile-info">
+                <h2>User Information</h2>
+                <p><strong>Name:</strong> <span id="userName">Sally</span></p>
+                <p><strong>Contact Number:</strong> <span id="userContact">+254 712 345 678</span></p>
+                <p><strong>Emergency Contact:</strong> <span id="emergencyContact">+254 798 765 432</span></p>
+                <button id="editProfileBtn">Edit Profile</button>
             </div>
-            <!-- End of Analyses -->
+
+            <div class="edit-profile" id="editProfile" style="display: none;">
+                <h2>Edit Profile</h2>
+                <label for="editName">Name:</label>
+                <input type="text" id="editName" placeholder="Enter your name" value="Sally">
+                
+                <label for="editContact">Contact Number:</label>
+                <input type="text" id="editContact" placeholder="Enter your contact number" value="+254 712 345 678">
+                
+                <label for="editEmergencyContact">Emergency Contact:</label>
+                <input type="text" id="editEmergencyContact" placeholder="Enter emergency contact" value="+254 798 765 432">
+                
+                <button id="saveProfileBtn">Save Changes</button>
+                <button id="cancelEditBtn">Cancel</button>
+            </div>
         </main>
         <!-- End of Main Content -->
 
@@ -127,13 +106,11 @@
                 <div class="profile">
                     <div class="info">
                         <p>Hey, <b>Sally</b></p>
-                       
                     </div>
                     <div class="profile-photo">
                         <img src="images/profile-1.jpg">
                     </div>
                 </div>
-
             </div>
             <!-- End of Nav -->
 
@@ -145,12 +122,8 @@
                     </span>
                 </div>
 
-                <div class="notification">    
-                </div>
-
-                <div class="notification deactive">   
-                </div>
-
+                <div class="notification"></div>
+                <div class="notification deactive"></div>
                 <div class="notification add-reminder">
                     <div>
                         <span class="material-icons-sharp">
@@ -159,14 +132,11 @@
                         <h3>Add Reminder</h3>
                     </div>
                 </div>
-
             </div>
-
         </div>
-
-
     </div>
 
-   <script src="dashboard.js"></script> 
+    <script src="profile.js"></script>
+    <script src="dashboard.js"></script>
 </body>
 </html>
