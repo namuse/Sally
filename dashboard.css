@@ -651,3 +651,31 @@ main .analyse h3{
     background-color: #0056b3;
 }
 
+/*job matching*/
+.job-matching {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.job-matching h2 {
+    margin-bottom: 10px;
+}
+
+.job-matching div {
+    margin-bottom: 10px;
+}
+
+#refreshJobMatchesBtn{
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#refreshJobMatchesBtn:hover {
+    background: #d8bfd8;
+    color: #fff;
+}

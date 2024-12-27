@@ -95,3 +95,29 @@ Orders.forEach(order => {
     tr.innerHTML = trContent;
     document.querySelector('table tbody').appendChild(tr);
 });
+
+//job matching
+// Sample job matches data (replace this with actual data fetching logic)
+const jobMatches = [
+    { title: "Software Engineer", company: "Tech Corp", location: "Gulf City" },
+    { title: "Project Manager", company: "Build It Inc.", location: "Gulf City" },
+    { title: "Data Analyst", company: "Data Solutions", location: "Gulf City" },
+];
+
+// Function to display job matches
+function displayJobMatches() {
+    const jobMatchesContainer = document.getElementById('jobMatchesContainer');
+    jobMatchesContainer.innerHTML = ""; // Clear previous matches
+
+    jobMatches.forEach(job => {
+        const jobElement = document.createElement('div');
+        jobElement.innerHTML = `<strong>${job.title}</strong> at ${job.company} - ${job.location}`;
+        jobMatchesContainer.appendChild(jobElement);
+    });
+}
+
+// Event listener for the refresh button
+document.getElementById('refreshJobMatchesBtn').addEventListener('click', displayJobMatches);
+
+// Initial display of job matches
+displayJobMatches();

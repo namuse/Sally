@@ -111,13 +111,13 @@ header {
     font-size: 1.6rem;
     text-transform: capitalize;
     color: black;
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
     pointer-events: none;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
 }
 
 .wrapper .form-container form .form-group i {
-    left: .5rem;
+    left: 0.5rem;
 }
 
 .wrapper .form-container form .form-group label {
@@ -131,7 +131,7 @@ header {
     border-radius: 0.5rem;
     border: none;
     outline: none;
-    border: .1rem solid black;
+    border: 0.1rem solid black;
     font-size: 1.6rem;
     color: black;
     background: transparent;
@@ -142,7 +142,7 @@ form .form-group input:valid~label,
 form .form-group input:focus~i,
 form .form-group input:valid~i {
     top: 0 !important;
-    font-size: 1.2rem !important;
+    font-size: 1.2rem;
     background-color:white;
 }
 
@@ -155,7 +155,7 @@ form .form-group input:valid~i {
     text-decoration: none;
     font-size: 1.4rem;
     text-transform: capitalize;
-    transform: all .5s ease;
+    transform: all 0.5s ease;
 }
 
 .wrapper .form-container form .forgot-pass a:hover {
@@ -172,9 +172,9 @@ form .form-group input:valid~i {
     font-weight: 500;
     outline: none;
     border: none;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     cursor: pointer;
-    box-shadow: 0 .2rem 1rem rgba(0 0 0 / 0.4);
+    box-shadow: 0 0.2rem 1rem rgba(0 0 0 / 0.4);
 }
 
 .wrapper .form-container form .link {
@@ -189,7 +189,7 @@ form .form-group input:valid~i {
     color: black;
     text-decoration: none;
     font-weight: 600;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
 }
 
 .wrapper .form-container form .link a:hover {
@@ -219,7 +219,7 @@ form .form-group input:valid~i {
 }
 
 .wrapper.animated-signin .form-container.sign-up {
-    animation: rotatecard .7s ease-in-out forwards;
+    animation: rotatecard 0.7s ease-in-out forwards;
 }
 
 @keyframes rotatecard {
@@ -254,8 +254,8 @@ form .form-group input:valid~i {
 
 .wrapper.wrapper.animated-signup .form-container.sign-in {
     transform: rotate(7deg);
-    animation: rotatecard .7s ease-in-out forwards;
-    animation-delay: .3s;
+    animation: rotatecard 0.7s ease-in-out forwards;
+    animation-delay: 0.3s;
 }
 
 @keyframes rotatecard {
