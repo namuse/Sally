@@ -121,3 +121,62 @@ document.getElementById('refreshJobMatchesBtn').addEventListener('click', displa
 
 // Initial display of job matches
 displayJobMatches();
+
+
+//job board
+const jobData = [
+    {
+        title: "Housekeeper",
+        location: "Riyadh, Saudi Arabia",
+        salary: "Competitive",
+        description: "Seeking a responsible and experienced housekeeper..." 
+    },
+    {
+        // Add more job objects here
+    }
+];
+
+const jobListingsContainer = document.getElementById('job-listings');
+
+// Function to create a job listing element
+function createJobListing(job) {
+    const listing = document.createElement('div');
+    listing.classList.add('job-listing');
+
+    // ... (rest of the code for creating job elements)
+    
+        const title = document.createElement('h3');
+        title.textContent = job.title;
+    
+        const location = document.createElement('p');
+        location.textContent = "Location: " + job.location;
+    
+        const salary = document.createElement('p');
+        salary.textContent = "Salary: " + job.salary;
+    
+        const description = document.createElement('p');
+        description.textContent = job.description;
+    
+        const applyButton = document.createElement('applybtn');
+        applyButton.textContent = "Apply Now"; 
+        // You can add event listeners to the button here
+    
+    applyButton.addEventListener('click', () => {
+        alert('You have applied for this job!'); 
+        // Here you can add logic for submitting an application (e.g., sending a form to a server)
+    });
+
+    listing.appendChild(title);
+    listing.appendChild(location);
+    listing.appendChild(salary);
+    listing.appendChild(description);
+    listing.appendChild(applyButton);
+
+    return listing;
+}
+
+// (If using sample job data)
+jobData.forEach(job => {
+    const listingElement = createJobListing(job);
+    jobListingsContainer.appendChild(listingElement);
+});
