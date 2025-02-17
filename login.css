@@ -67,7 +67,7 @@ header {
 .wrapper {
     position: relative;
     width: 35rem;
-    height: 50rem;
+    height: 55rem;
 }
 
 @media(min-width: 540px) {
